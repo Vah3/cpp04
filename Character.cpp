@@ -19,6 +19,10 @@ Character::Character(const Character & ob){
 // check self assignment
 Character & Character::operator=(const Character &ob)
 {
+	if (this == &ob)
+	{
+		return *this;
+	}	
 	this->name = ob.name;
 	for(int i = 0; i < 4; i++)
 	{
@@ -31,7 +35,7 @@ Character::~Character()
 {
 	for(int i = 0;i < 4; i++)
 	{
-		//delete inventory[i];
+		delete inventory[i];
 	//	this->inventory[i] = NULL;
 		}
 }

@@ -15,6 +15,10 @@ Ice::Ice(const Ice &ob) : AMateria(ob)
 
 Ice &Ice::operator=(const Ice &ob)
 {
+	if (this == &ob)
+	{
+		return *this;
+	}
 	this->type = ob.type;
 	return *this;
 }

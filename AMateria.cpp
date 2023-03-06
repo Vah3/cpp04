@@ -16,6 +16,10 @@ AMateria::AMateria(const AMateria &ob)
 
 AMateria & AMateria::operator=(const AMateria &ob)
 {
+	if (this == &ob)
+	{
+		return *this;
+	}
 	this->type = ob.type;
 	return *this;
 }

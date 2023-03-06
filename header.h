@@ -6,6 +6,8 @@
 # include "Character.hpp"
 # include "Ice.hpp"
 # include "Cure.hpp"
+# include "IMateriaSource.hpp"
+# include "MateriaSource.hpp"
 
 class AMateria;
 class ICharacter;
